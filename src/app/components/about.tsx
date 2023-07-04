@@ -30,9 +30,9 @@ export default function About() {
       <div className="flex flex-col xl:flex-row">
         <a
           href="https://t.me/index_zero"
-          className="group mr-3 rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-flex"
+          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
         >
-          <p className="text-black dark:text-white inline-block transition-transform group-hover:-translate-y-1 motion-reduce:transform-none ml-1">
+          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
             Telegram{" "}
             <FontAwesomeIcon
               icon={faTelegram}
@@ -43,9 +43,9 @@ export default function About() {
         </a>
         <a
           href="https://github.com/IndexZeroZzz"
-          className="group mr-3 rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-flex"
+          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
         >
-          <p className="text-black dark:text-white inline-block transition-transform group-hover:-translate-y-1 motion-reduce:transform-none ml-1">
+          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
             Github{" "}
             <FontAwesomeIcon
               icon={faGithub}
@@ -56,9 +56,9 @@ export default function About() {
         </a>
         <a
           href="https://gitlab.com/indx0"
-          className="group mr-3 rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-flex"
+          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
         >
-          <p className="text-black dark:text-white inline-block transition-transform group-hover:-translate-y-1 motion-reduce:transform-none ml-1">
+          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
             Gitlab{" "}
             <FontAwesomeIcon
               icon={faGitlab}
@@ -69,31 +69,31 @@ export default function About() {
         </a>
         <a
           href="https://m.vk.com/irindx"
-          className="group mr-3 rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-flex"
+          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
         >
-          <p className="text-black dark:text-white inline-block transition-transform group-hover:-translate-y-1 motion-reduce:transform-none ml-1">
+          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
             VK{" "}
             <FontAwesomeIcon icon={faVk} height={20} className="inline ml-1" />
           </p>
         </a>
         <a
           href="mailto:7k7ky5qeg@mozmail.com"
-          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-flex"
+          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
         >
-          <p className="text-black dark:text-white inline-block transition-transform group-hover:-translate-y-1 motion-reduce:transform-none ml-1">
+          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none text-center">
             Email{" "}
             <FontAwesomeIcon
               icon={faEnvelope}
               height={20}
-              className="inline ml-1"
+              className="inline ml-1 text-center"
             />
           </p>
         </a>
         <a
           href="https://www.donationalerts.com/r/SalmonBtw"
-          className="group mr-3 rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-flex"
+          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
         >
-          <p className="text-red-500 inline-block transition-transform group-hover:-translate-y-1 motion-reduce:transform-none ml-1">
+          <p className="text-red-500 transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
             Donate{" "}
             <FontAwesomeIcon
               icon={faHeart}
