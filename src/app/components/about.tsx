@@ -9,6 +9,7 @@ import Image from "next/image";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { headers } from "next/dist/client/components/headers";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import AnimatedButton from "./animated_button";
 
 export default function About() {
   return (
@@ -28,80 +29,70 @@ export default function About() {
         JS/TS, React and Next.js.
       </h4>
       <div className="flex flex-col xl:flex-row">
-        <a
+        <AnimatedButton
           href="https://t.me/index_zero"
-          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
+          className="mr-3 px-5 py-5 text-center"
+          classText="text-black dark:text-white"
         >
-          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
-            Telegram{" "}
-            <FontAwesomeIcon
-              icon={faTelegram}
-              height={20}
-              className="inline ml-1"
-            />
-          </p>
-        </a>
-        <a
+          Telegram{" "}
+          <FontAwesomeIcon
+            icon={faTelegram}
+            height={20}
+            className="inline ml-1"
+          />
+        </AnimatedButton>
+
+        <AnimatedButton
           href="https://github.com/IndexZeroZzz"
-          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
+          className="mr-3 px-5 py-5 text-center"
+          classText="text-black dark:text-white"
         >
-          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
-            Github{" "}
-            <FontAwesomeIcon
-              icon={faGithub}
-              height={20}
-              className="inline ml-1"
-            />
-          </p>
-        </a>
-        <a
+          Github{" "}
+          <FontAwesomeIcon
+            icon={faGithub}
+            height={20}
+            className="inline ml-1"
+          />
+        </AnimatedButton>
+        <AnimatedButton
           href="https://gitlab.com/indx0"
-          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
+          className="mr-3 px-5 py-5 text-center"
+          classText="text-black dark:text-white"
         >
-          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
-            Gitlab{" "}
-            <FontAwesomeIcon
-              icon={faGitlab}
-              height={20}
-              className="inline ml-1"
-            />
-          </p>
-        </a>
-        <a
-          href="https://m.vk.com/irindx"
-          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
+          Gitlab{" "}
+          <FontAwesomeIcon
+            icon={faGitlab}
+            height={20}
+            className="inline ml-1"
+          />
+        </AnimatedButton>
+        <AnimatedButton
+          href="https://vk.com/irindx"
+          className="mr-3 px-5 py-5 text-center"
+          classText="text-black dark:text-white"
         >
-          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
-            VK{" "}
-            <FontAwesomeIcon icon={faVk} height={20} className="inline ml-1" />
-          </p>
-        </a>
-        <a
+          VK <FontAwesomeIcon icon={faVk} height={20} className="inline ml-1" />
+        </AnimatedButton>
+        <AnimatedButton
           href="mailto:7k7ky5qeg@mozmail.com"
-          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
+          className="mr-3 px-5 py-5 text-center"
+          classText="text-black dark:text-white"
         >
-          <p className="text-black dark:text-white transition-transform group-hover:-translate-y-1 motion-reduce:transform-none text-center">
-            Email{" "}
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              height={20}
-              className="inline ml-1 text-center"
-            />
-          </p>
-        </a>
-        <a
+          Email{" "}
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            height={20}
+            className="inline ml-1"
+          />
+        </AnimatedButton>
+        <AnimatedButton
           href="https://www.donationalerts.com/r/SalmonBtw"
-          className="group mr-3 text-center rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 inline-block"
+          className="mr-3 px-5 py-5 text-center"
+          classText="text-red-500"
         >
-          <p className="text-red-500 transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
-            Donate{" "}
-            <FontAwesomeIcon
-              icon={faHeart}
-              height={20}
-              className="inline ml-1"
-            />
-          </p>
-        </a>
+          Donate{" "}
+          <FontAwesomeIcon icon={faHeart} height={20} className="inline ml-1" />
+        </AnimatedButton>
       </div>
     </div>
   );
