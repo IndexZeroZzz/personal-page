@@ -6,6 +6,7 @@ export async function getPosts(page: number) {
     `https://strapi-indx-blog.onrender.com/api/posts?pagination[page]=${page}&pagination[pageSize]=5`,
     {
       method: "GET",
+      cache: 'no-store',
       headers: {
         "Content-Type": "application/json",
       },
@@ -51,6 +52,7 @@ export async function getPosts(page: number) {
 export async function getData(post: string) {
   let res = await fetch(`https://strapi-indx-blog.onrender.com/api/posts/${post}`, {
     method: "GET",
+    cache: 'no-store',
     headers: {
       "Content-Type": "application/json",
     },
