@@ -6,14 +6,14 @@ import {
   faVk,
 } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faNewspaper } from "@fortawesome/free-regular-svg-icons";
 import { headers } from "next/dist/client/components/headers";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import AnimatedButton from "./animated_button";
 
 export default function About() {
   return (
-    <div className="flex min-h-screen flex-col items-center p-0 content-center justify-center">
+    <div className="flex min-h-screen flex-col items-center p-5 content-center justify-center">
       <div className="flex justify-center flex-col items-center content-center">
         <Image
           className="rounded-full"
@@ -30,6 +30,18 @@ export default function About() {
       </h4>
       <div className="flex flex-col xl:flex-row">
         <AnimatedButton
+          href="/blog_list/1"
+          className="mr-3 px-5 py-5 text-center"
+          classText="text-black dark:text-white"
+        >
+          Blog{" "}
+          <FontAwesomeIcon
+            icon={faNewspaper}
+            height={20}
+            className="inline ml-1"
+          />
+        </AnimatedButton>
+        <AnimatedButton
           href="https://t.me/index_zero"
           className="mr-3 px-5 py-5 text-center"
           classText="text-black dark:text-white"
@@ -41,7 +53,6 @@ export default function About() {
             className="inline ml-1"
           />
         </AnimatedButton>
-
         <AnimatedButton
           href="https://github.com/IndexZeroZzz"
           className="mr-3 px-5 py-5 text-center"
@@ -94,6 +105,10 @@ export default function About() {
           <FontAwesomeIcon icon={faHeart} height={20} className="inline ml-1" />
         </AnimatedButton>
       </div>
+
+      <h4 className="text-center mt-8">
+      Currently, I don't have money for a VDS server and my blog is hosted on Render and Supabase, so it has only text posts and may be down sometimes. If you want to donate to me - you can do it with a red donate button on this page ;)
+      </h4>
     </div>
   );
 }
