@@ -107,7 +107,7 @@ export default function About() {
       </div>
 
       <h4 className="text-center mt-8">
-      Currently, I don't have money for a VDS server and my blog is hosted on Render and Supabase, so it has only text posts and may be down sometimes. If you want to donate to me - you can do it with a red donate button on this page ;)
+      Currently, I don&apos;t have money for a VDS server and my blog is hosted on Render and Supabase, so it has only text posts and may be down sometimes. If you want to donate to me - you can do it with a red donate button on this page ;)
       </h4>
     </div>
   );
