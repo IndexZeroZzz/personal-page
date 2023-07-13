@@ -46,7 +46,7 @@ export async function getPosts(page: number) {
     return notfound;
   }
 
-  return elements;
+  return elements.reverse();
 }
 
 export async function getData(post: string) {
@@ -60,4 +60,18 @@ export async function getData(post: string) {
 
   // Recommendation: handle errors
   return res.data.attributes;
+}
+
+export async function getPageCount() {
+  let res = await fetch(`https://strapi-indx-blog.onrender.com/api/posts?pagination[page]=1&pagination[pageSize]=5`, {
+    method: "GET",
+    cache: 'no-store',
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((response) => response.json());
+
+  // Recommendation: handle errors
+  return res.meta.pagination.pageCount;
+
 }

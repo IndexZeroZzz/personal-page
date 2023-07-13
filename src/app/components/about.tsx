@@ -10,8 +10,11 @@ import { faEnvelope, faNewspaper } from "@fortawesome/free-regular-svg-icons";
 import { headers } from "next/dist/client/components/headers";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import AnimatedButton from "./animated_button";
+import { getPageCount } from "../functions/get_data";
+import { resolve } from "path";
 
-export default function About() {
+export default async function About() {
+  
   return (
     <div className="flex min-h-screen flex-col items-center p-5 content-center justify-center">
       <div className="flex justify-center flex-col items-center content-center">
@@ -30,7 +33,7 @@ export default function About() {
       </h4>
       <div className="flex flex-col xl:flex-row">
         <AnimatedButton
-          href="/blog_list/1"
+          href={`/blog_list/${await getPageCount()}`}
           className="mr-3 px-5 py-5 text-center"
           classText="text-black dark:text-white"
         >
