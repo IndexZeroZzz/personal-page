@@ -36,9 +36,11 @@ export async function getPosts(page: number) {
      }
   } else {
     let notfound: any[] = [
-    <div>
-        <h1>Page Not Found</h1>
-    </div>
+    <>
+      <div>
+          <h1>Page Not Found</h1>
+      </div>
+    </>
     ];
     return notfound;
   }
