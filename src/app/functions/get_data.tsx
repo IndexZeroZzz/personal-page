@@ -46,7 +46,7 @@ export async function getPosts(page: number) {
     return notfound;
   }
 
-  return elements.reverse();
+  return elements;
 }
 
 export async function getData(post: string) {
