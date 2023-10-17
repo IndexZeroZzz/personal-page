@@ -26,8 +26,7 @@ export default async function About() {
       </div>
       <h1 className="text-2xl font-bold m-5">&lt;/Index:Zero&gt;</h1>
       <h4 className="text-center mb-10">
-        Someone from the internet. Coding in Java, Python. Currently learning
-        JS/TS, React and Next.js.
+        Someone from the internet. Coding in Java, Python, JS/TS(NextJS, React).
       </h4>
       <div className="flex flex-col xl:flex-row">
         <AnimatedButton
@@ -67,13 +66,6 @@ export default async function About() {
           />
         </AnimatedButton>
         <AnimatedButton
-          href="https://vk.com/irindx"
-          className="mr-3 px-5 py-5 text-center"
-          classText="text-black dark:text-white"
-        >
-          VK <FontAwesomeIcon icon={faVk} height={20} className="inline ml-1" />
-        </AnimatedButton>
-        <AnimatedButton
           href="mailto:7k7ky5qeg@mozmail.com"
           className="mr-3 px-5 py-5 text-center"
           classText="text-black dark:text-white"
@@ -84,14 +76,6 @@ export default async function About() {
             height={20}
             className="inline ml-1"
           />
-        </AnimatedButton>
-        <AnimatedButton
-          href="https://www.donationalerts.com/r/SalmonBtw"
-          className="mr-3 px-5 py-5 text-center"
-          classText="text-red-500"
-        >
-          Donate{" "}
-          <FontAwesomeIcon icon={faHeart} height={20} className="inline ml-1" />
         </AnimatedButton>
       </div>
     </div>
