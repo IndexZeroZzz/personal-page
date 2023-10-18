@@ -26,7 +26,7 @@ export default async function About() {
       </div>
       <h1 className="text-2xl font-bold m-5">&lt;/Index:Zero&gt;</h1>
       <h4 className="text-center mb-10">
-        Someone from the internet. Coding in Java, Python, JS/TS (NextJS, React).
+        Someone from the internet. I code on Java, Python, JS/TS (NextJS, React).
       </h4>
       <div className="flex flex-col xl:flex-row">
         <AnimatedButton
