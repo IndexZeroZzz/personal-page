@@ -29,7 +29,7 @@ export default async function About() {
       <h4 className="text-center mb-10">
         Someone from the internet. Beginner developer.
       </h4>
-      <div className="flex flex-col xl:flex-row">
+      <div className="flex flex-col md:flex-row">
         <AnimatedButton
           href="https://t.me/index_zero"
           className="mr-3 px-5 py-5 text-center"
@@ -80,10 +80,11 @@ export default async function About() {
         </AnimatedButton>
       </div>
 
-      <h2 className="text-xl font-bold m-5 my-14">Things I work with:</h2>
+      <h2 className="text-xl font-bold m-5 my-5">Things I work with:</h2>
+        <h2 className="text-lg font-bold m-5 mb-8">Frontend:</h2>
       <div>
+        <div className="flex flex-col lg:flex-row justify-center content-center gap-14">
 
-        <div className="flex flex-col xl:flex-row justify-center content-center items-center gap-14">
             <div className="flex flex-col justify-center items-center border-2 border-neutral-700 rounded-lg p-7">
                 <FontAwesomeIcon
                     icon={faSquareJs}
@@ -91,33 +92,42 @@ export default async function About() {
                     width={75}
                     className="inline text-yellow-300"
                 />
-                <h3 className="text-lg text-center font-bold m-5">JS</h3>
-                <p className="text-center">JS, TS, Tailwind and NextJS.</p>
+                <h3 className="text-lg text-center font-bold m-5">JavaScript</h3>
             </div>
+
             <div className="flex flex-col justify-center items-center border-2 border-neutral-700 rounded-lg p-7">
-                <div className="flex flex-row gap-20 justify-center items-center">
-                    <div className="flex flex-col justify-center items-center">
-                        <FontAwesomeIcon
-                            icon={faJava}
-                            height={75}
-                            width={75}
-                            className="inline text-orange-400"
-                        />
-                        <h3 className="text-lg text-center font-bold m-5">Java</h3>
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                        <Image
-                            className="rounded-none"
-                            src="/img/kotlin.svg"
-                            width={75}
-                            height={75}
-                            alt="My profile picture"
-                        />
-                        <h3 className="text-lg text-center font-bold m-5">Kotlin</h3>
-                    </div>
-                </div>
-                <p className="text-center">Beginner Android dev. Planning to learn Spring Framework.</p>
+                <Image
+                    className="rounded-lg"
+                    src="/img/ts.svg"
+                    width={75}
+                    height={75}
+                    alt="TypeScript"
+                />
+                <h3 className="text-lg text-center font-bold m-3">TypeScript</h3>
             </div>
+
+            <div className="flex flex-col justify-center items-center border-2 border-neutral-700 rounded-lg p-7">
+                <Image
+                    className="rounded-lg"
+                    src="/img/next.svg"
+                    width={75}
+                    height={75}
+                    alt="Next.js"
+                />
+                <h3 className="text-lg text-center font-bold m-3">Next.js</h3>
+            </div>
+
+            <div className="flex flex-col justify-center items-center border-2 border-neutral-700 rounded-lg p-7">
+                <Image
+                    className="rounded-lg"
+                    src="/img/tailwind.svg"
+                    width={75}
+                    height={75}
+                    alt="Tailwind"
+                />
+                <h3 className="text-lg text-center font-bold m-3">Tailwind CSS</h3>
+            </div>
+
 
 
         </div>
