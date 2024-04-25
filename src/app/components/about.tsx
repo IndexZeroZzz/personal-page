@@ -80,7 +80,7 @@ export default async function About() {
         </AnimatedButton>
       </div>
 
-      <h2 className="text-xl font-bold m-5 my-5">Things I work with:</h2>
+      <h2 className="text-xl font-bold m-5 my-5">My skills:</h2>
         <h2 className="text-lg font-bold m-5 mb-8">Frontend:</h2>
       <div>
         <div className="flex flex-col lg:flex-row justify-center content-center gap-14">
