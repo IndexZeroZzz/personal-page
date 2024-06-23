@@ -27,7 +27,7 @@ export default async function About() {
       </div>
       <h1 className="text-2xl font-bold m-5">&lt;/Index:Zero&gt;</h1>
       <h4 className="text-center mb-10">
-        Someone from the internet. Frontend developer.
+        Frontend developer.
       </h4>
       <div className="flex flex-col md:flex-row">
         <AnimatedButton
